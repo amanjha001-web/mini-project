@@ -1,0 +1,107 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: black;
+    overflow-x: hidden;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+}
+.win{
+    display: flex;
+    flex-direction: column;
+    background-color: #303031;
+    max-height: 200px;
+    max-width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 7px 30px ;
+    visibility: hidden;
+    z-index: 2;
+}
+.win h2{
+  font-size: 50px;
+  padding: 10px 5px;
+  color: green;
+}
+.win button{
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 2px;
+  background-color: rgb(42, 51, 51);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 7px 7px 20px black;
+}
+h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: #323232;
+    height: auto;
+    line-height: 100px;
+}
+.btn{
+    height: auto;
+    width: 60vw;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    min-height: 22vh;
+    min-width: 15vw;
+    background-color: #171a29;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    color: #3a4c5b;
+    font-size: 50px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(28, 28, 28);
+    z-index: 1;
+}
+#resetBtn{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 140px;
+    height: 40px;
+    color: rgb(237, 208, 65);
+    background-color: rgb(66, 34, 34);
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(49, 48, 48);
+}
+.star {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    animation: twinkle 2s infinite ease-in-out;
+    opacity: 0.8;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.2; }
+  }
